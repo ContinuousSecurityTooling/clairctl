@@ -1,9 +1,9 @@
 package cmd
 
 import (
-	"github.com/jgsqware/clairctl/clair"
+	"github.com/ContinuousSecurityTooling/clairctl/clair"
 	"github.com/spf13/cobra"
-	"github.com/jgsqware/clairctl/config"
+	"github.com/ContinuousSecurityTooling/clairctl/config"
 )
 
 var clusterCmd = &cobra.Command{

@@ -11,9 +11,9 @@ import (
 	"github.com/coreos/clair/api/v1"
 	"github.com/coreos/clair/utils/types"
 	"github.com/fatih/color"
-	"github.com/jgsqware/clairctl/clair"
-	"github.com/jgsqware/clairctl/config"
-	"github.com/jgsqware/clairctl/docker"
+	"github.com/ContinuousSecurityTooling/clairctl/clair"
+	"github.com/ContinuousSecurityTooling/clairctl/config"
+	"github.com/ContinuousSecurityTooling/clairctl/docker"
 	"github.com/spf13/cobra"
 )
 

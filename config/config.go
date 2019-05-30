@@ -14,12 +14,12 @@ import (
 	"gopkg.in/yaml.v2"
 
 	"github.com/coreos/pkg/capnslog"
-	"github.com/jgsqware/clairctl/xstrings"
+	"github.com/ContinuousSecurityTooling/clairctl/xstrings"
 	"github.com/jgsqware/xnet"
 	"github.com/spf13/viper"
 )
 
-var log = capnslog.NewPackageLogger("github.com/jgsqware/clairctl", "config")
+var log = capnslog.NewPackageLogger("github.com/ContinuousSecurityTooling/clairctl", "config")
 
 var errNoInterfaceProvided = errors.New("could not load configuration: no interface provided")
 var errInvalidInterface = errors.New("Interface does not exist")

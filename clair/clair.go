@@ -6,12 +6,12 @@ import (
 
 	"github.com/coreos/clair/api/v1"
 	"github.com/coreos/pkg/capnslog"
-	"github.com/jgsqware/clairctl/xstrings"
+	"github.com/ContinuousSecurityTooling/clairctl/xstrings"
 	"github.com/spf13/viper"
 	"net/http"
 )
 
-var log = capnslog.NewPackageLogger("github.com/jgsqware/clairctl", "clair")
+var log = capnslog.NewPackageLogger("github.com/ContinuousSecurityTooling/clairctl", "clair")
 
 var uri string
 var headers map[string]string

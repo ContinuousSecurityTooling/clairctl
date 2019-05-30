@@ -16,15 +16,15 @@ RUN apk add --update curl \
  && tar xfvz docker.tgz --strip 1 -C /usr/bin/ docker/docker \
  && rm -f docker.tgz \
  && go get -u github.com/jteeuwen/go-bindata/... \
- && curl -sL https://github.com/jgsqware/clairctl/archive/${CLAIRCTL_VERSION}.zip -o clairctl.zip \
+ && curl -sL https://github.com/ContinuousSecurityTooling/clairctl/archive/${CLAIRCTL_VERSION}.zip -o clairctl.zip \
  && mkdir -p ${GOPATH}/src/github.com/jgsqware/ \
  && unzip clairctl.zip -d ${GOPATH}/src/github.com/jgsqware/ \
  && rm -f clairctl.zip \
- && mv ${GOPATH}/src/github.com/jgsqware/clairctl-* ${GOPATH}/src/github.com/jgsqware/clairctl \
- && cd ${GOPATH}/src/github.com/jgsqware/clairctl \
+ && mv ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl-* ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl \
+ && cd ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl \
  && glide install -v \
  && go generate ./clair \
- && go build -o /usr/local/bin/clairctl -ldflags "-X github.com/jgsqware/clairctl/cmd.version=${CLAIRCTL_VERSION}-${CLAIRCTL_COMMIT}" \
+ && go build -o /usr/local/bin/clairctl -ldflags "-X github.com/ContinuousSecurityTooling/clairctl/cmd.version=${CLAIRCTL_VERSION}-${CLAIRCTL_COMMIT}" \
  && apk del build-dependencies \
  && rm -rf /var/cache/apk/* \
  && rm -rf /root/.glide/ \

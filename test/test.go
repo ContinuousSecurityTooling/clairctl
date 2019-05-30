@@ -7,7 +7,7 @@ import (
 	"github.com/coreos/pkg/capnslog"
 )
 
-var log = capnslog.NewPackageLogger("github.com/jgsqware/clairctl", "test")
+var log = capnslog.NewPackageLogger("github.com/ContinuousSecurityTooling/clairctl", "test")
 
 func CreateTmpConfigFile(content string) string {
 

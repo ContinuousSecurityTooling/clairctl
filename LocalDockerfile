@@ -10,12 +10,12 @@ ARG DOCKER_VERSION=${DOCKER_VERSION:-latest}
 ARG CLAIRCTL_VERSION=${CLAIRCTL_VERSION:-master}
 ARG CLAIRCTL_COMMIT=
 
-RUN mkdir -p ${GOPATH}/src/github.com/jgsqware/clairctl/
+RUN mkdir -p ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl/
 
-COPY clairctl.zip ${GOPATH}/src/github.com/jgsqware/clairctl/clairctl.zip
+COPY clairctl.zip ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl/clairctl.zip
 
-RUN unzip ${GOPATH}/src/github.com/jgsqware/clairctl/clairctl.zip -d ${GOPATH}/src/github.com/jgsqware/clairctl/ \
-  && rm ${GOPATH}/src/github.com/jgsqware/clairctl/clairctl.zip
+RUN unzip ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl/clairctl.zip -d ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl/ \
+  && rm ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl/clairctl.zip
 
 RUN apk add --update curl \
  && apk add --virtual build-dependencies go gcc build-base glide git \
@@ -26,10 +26,10 @@ RUN apk add --update curl \
  && tar xfvz docker.tgz --strip 1 -C /usr/bin/ docker/docker \
  && rm -f docker.tgz \
  && go get -u github.com/jteeuwen/go-bindata/... \
- && cd ${GOPATH}/src/github.com/jgsqware/clairctl \
+ && cd ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl \
  && glide install -v \
  && go generate ./clair \
- && go build -o /usr/local/bin/clairctl -ldflags "-X github.com/jgsqware/clairctl/cmd.version=${CLAIRCTL_VERSION}-${CLAIRCTL_COMMIT}" \
+ && go build -o /usr/local/bin/clairctl -ldflags "-X github.com/ContinuousSecurityTooling/clairctl/cmd.version=${CLAIRCTL_VERSION}-${CLAIRCTL_COMMIT}" \
  && apk del build-dependencies \
  && rm -rf /var/cache/apk/* \
  && rm -rf /root/.glide/ \

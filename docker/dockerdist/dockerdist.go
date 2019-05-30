@@ -48,7 +48,7 @@ import (
 	"golang.org/x/net/context"
 )
 
-var log = capnslog.NewPackageLogger("github.com/jgsqware/clairctl", "dockerdist")
+var log = capnslog.NewPackageLogger("github.com/ContinuousSecurityTooling/clairctl", "dockerdist")
 
 var ErrTagNotFound = errors.New("this image or tag is not found")
 

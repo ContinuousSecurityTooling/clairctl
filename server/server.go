@@ -12,13 +12,13 @@ import (
 	"time"
 
 	"github.com/coreos/pkg/capnslog"
-	"github.com/jgsqware/clairctl/clair"
-	"github.com/jgsqware/clairctl/config"
-	"github.com/jgsqware/clairctl/docker/dockerdist"
+	"github.com/ContinuousSecurityTooling/clairctl/clair"
+	"github.com/ContinuousSecurityTooling/clairctl/config"
+	"github.com/ContinuousSecurityTooling/clairctl/docker/dockerdist"
 	"github.com/spf13/viper"
 )
 
-var log = capnslog.NewPackageLogger("github.com/jgsqware/clairctl", "server")
+var log = capnslog.NewPackageLogger("github.com/ContinuousSecurityTooling/clairctl", "server")
 
 //Serve run a local server with the fileserver and the reverse proxy
 func Serve(sURL string) error {

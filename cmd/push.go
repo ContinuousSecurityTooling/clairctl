@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jgsqware/clairctl/clair"
-	"github.com/jgsqware/clairctl/config"
-	"github.com/jgsqware/clairctl/docker"
-	"github.com/jgsqware/clairctl/server"
+	"github.com/ContinuousSecurityTooling/clairctl/clair"
+	"github.com/ContinuousSecurityTooling/clairctl/config"
+	"github.com/ContinuousSecurityTooling/clairctl/docker"
+	"github.com/ContinuousSecurityTooling/clairctl/server"
 	"github.com/spf13/cobra"
 )
 

@@ -3,9 +3,9 @@ package cmd
 import (
 	"fmt"
 
-	"github.com/jgsqware/clairctl/clair"
-	"github.com/jgsqware/clairctl/config"
-	"github.com/jgsqware/clairctl/docker"
+	"github.com/ContinuousSecurityTooling/clairctl/clair"
+	"github.com/ContinuousSecurityTooling/clairctl/config"
+	"github.com/ContinuousSecurityTooling/clairctl/docker"
 	"github.com/spf13/cobra"
 )
 

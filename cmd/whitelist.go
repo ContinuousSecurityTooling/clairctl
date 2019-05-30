@@ -3,7 +3,7 @@ package cmd
 import (
 	"io/ioutil"
 	"gopkg.in/yaml.v2"
-	"github.com/jgsqware/clairctl/clair"
+	"github.com/ContinuousSecurityTooling/clairctl/clair"
 	"github.com/coreos/clair/api/v1"
 	"strings"
 )
