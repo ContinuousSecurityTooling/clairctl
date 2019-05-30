@@ -1,4 +1,4 @@
-package: github.com/jgsqware/clairctl
+package: github.com/ContinuousSecurityTooling/clairctl
 import:
 - package: github.com/artyom/untar
 - package: github.com/coreos/clair
