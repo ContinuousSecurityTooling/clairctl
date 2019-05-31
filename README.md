@@ -1,6 +1,7 @@
 # clairctl
 
 [![Build Status](https://travis-ci.org/ContinuousSecurityTooling/clairctl.svg?branch=master)](https://travis-ci.org/ContinuousSecurityTooling/clairctl)
+[![Docker Automated build](https://cloud.docker.com/repository/docker/continuoussecuritytooling/clairctl)](https://img.shields.io/docker/automated/continuoussecuritytooling/clairctl.svg)
 
 > Tracking container vulnerabilities with Clair Control
 
@@ -282,7 +283,7 @@ E.G.:
 
 Build a tagged version
 
-`./local-docker.sh ContinuousSecurityTooling/clairctl:1.2.9`
+`./local-docker.sh ContinuousSecurityTooling/clairctl:1.3.0`
 
 or
 

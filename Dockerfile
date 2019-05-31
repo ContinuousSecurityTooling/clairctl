@@ -17,8 +17,8 @@ RUN apk add --update curl \
  && rm -f docker.tgz \
  && go get -u github.com/jteeuwen/go-bindata/... \
  && curl -sL https://github.com/ContinuousSecurityTooling/clairctl/archive/${CLAIRCTL_VERSION}.zip -o clairctl.zip \
- && mkdir -p ${GOPATH}/src/github.com/jgsqware/ \
- && unzip clairctl.zip -d ${GOPATH}/src/github.com/jgsqware/ \
+ && mkdir -p ${GOPATH}/src/github.com/ContinuousSecurityTooling/ \
+ && unzip clairctl.zip -d ${GOPATH}/src/github.com/ContinuousSecurityTooling/ \
  && rm -f clairctl.zip \
  && mv ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl-* ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl \
  && cd ${GOPATH}/src/github.com/ContinuousSecurityTooling/clairctl \
