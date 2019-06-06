@@ -1,5 +1,5 @@
-hash: d3cfc2378824ba0a29ec993c53ea5f06182f2429a0af768322452c1a31b394ea
-updated: 2018-08-06T18:21:35.982413+01:00
+hash: 808e003ca253644236e95c98b844fb17ed1e9f33cdff3dea49417cd29f5e0b67
+updated: 2019-05-31T05:18:51.301799+02:00
 imports:
 - name: cloud.google.com/go
   version: 3b1ae45394a234c385be014e9a488f2bb6eef821
@@ -9,7 +9,7 @@ imports:
 - name: github.com/artyom/untar
   version: 02ed5a2449a661eb02b1e3d658524223ab726412
 - name: github.com/aws/aws-sdk-go
-  version: f70339bb6af843c8ab1974381b3f4fcaee2b1a41
+  version: 5312c8dac9067d339c4e68d7e0dd5507b2f01849
   subpackages:
   - aws
   - aws/awserr
@@ -20,6 +20,7 @@ imports:
   - aws/credentials
   - aws/credentials/ec2rolecreds
   - aws/credentials/endpointcreds
+  - aws/credentials/processcreds
   - aws/credentials/stscreds
   - aws/csm
   - aws/defaults
@@ -28,6 +29,7 @@ imports:
   - aws/request
   - aws/session
   - aws/signer/v4
+  - internal/ini
   - internal/sdkio
   - internal/sdkrand
   - internal/sdkuri
@@ -175,7 +177,7 @@ imports:
   - sockets
   - tlsconfig
 - name: github.com/docker/go-units
-  version: 47565b4f722fb6ceae66b95f853feed578a4a51c
+  version: 519db1ee28dcc9fd2474ae59fca29a810482bfb1
 - name: github.com/docker/libtrust
   version: fa567046d9b14f6aa788882a950d69651d230b21
 - name: github.com/emicklei/go-restful
@@ -191,8 +193,6 @@ imports:
   version: bd2828f9f176e52d7222e565abb2d338d3f3c103
 - name: github.com/ghodss/yaml
   version: 73d445a93680fa1a78ae23a5839bad48f32ba1ee
-- name: github.com/go-ini/ini
-  version: d58d458bec3cb5adec4b7ddb41131855eac0b33f
 - name: github.com/go-openapi/jsonpointer
   version: 46af16f9f7b149af66e5d1bd010e3574dc06de98
 - name: github.com/go-openapi/jsonreference
